@@ -6,6 +6,7 @@ from sapiopylib.rest.User import SapioUser
 
 from create_drug_sub_and_prod import DrugCatalogManager
 
+# TODO: Replace the api_url, username, and password with the one you created
 load_dotenv()
 api_url = os.getenv('API_URL')
 username = os.getenv('API_USERNAME')
@@ -14,7 +15,7 @@ password = os.getenv('API_PASSWORD')
 if __name__ == "__main__":
     user = SapioUser(url=api_url, verify_ssl_cert=True, username=username, password=password)
 
-    # Get Data, replace with your own data
+    # TODO: Get Data, replace with your own data
     drug_substance_name: str = "Drug Substance XXX001"
     drug_product_name: str = "Drug Product XXX001"
 
